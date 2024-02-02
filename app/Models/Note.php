@@ -10,6 +10,13 @@ class Note extends Model
 {
     use HasFactory, HasUuids;
 
+    protected $fillable = [
+        'title',
+        'body',
+        'send_date',
+        'recipient',
+    ];
+
    protected $gaurded = [
          'id',
    ];
